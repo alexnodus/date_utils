@@ -47,6 +47,8 @@ mod tests {
 
     #[test]
     fn test_date_difference() {
+        assert_eq!(calculate_date_difference(2024, 03, 31, 2024, 4, 30), (0, 0, 30));
+
         assert_eq!(calculate_date_difference(2024, 04, 01, 2024, 4, 01), (0, 0, 0));
         assert_eq!(calculate_date_difference(2024, 04, 01, 2024, 4, 02), (0, 0, 1));
 

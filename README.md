@@ -24,3 +24,6 @@ fn main() {
     let (years, months, days) = calculate_date_difference(start_year, start_month, start_day, end_year, end_month, end_day);
     println!("Difference is {} years, {} months, and {} days", years, months, days);
 }
+
+[dependencies]
+date_utils = { git = "https://github.com/alexnodus/date_utils.git" }
